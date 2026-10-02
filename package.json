@@ -1,0 +1,15 @@
+{
+  "name": "devops-task-1",
+  "version": "1.0.0",
+  "description": "Small Node.js sample application for DevOps internship Task 1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "devops",
+    "git",
+    "nodejs"
+  ],
+  "license": "MIT"
+}
