@@ -4,7 +4,8 @@
   "description": "Small Node.js sample application for DevOps internship Task 1",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [
     "devops",
