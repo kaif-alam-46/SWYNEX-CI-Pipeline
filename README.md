@@ -76,3 +76,37 @@ git push origin feature/sample-app
 - Branching notes
 - Small sample application
 - Git-based project workflow
+
+## Docker Deployment
+
+### Prerequisites
+- Docker Desktop installed and running
+- Git
+
+### Build Docker Image
+```powershell
+docker build -t swynex-node-app .
+```
+
+### Run the Application
+```powershell
+docker run --rm -d --name swynex-app -p 3000:3000 swynex-node-app
+```
+
+Open your browser at: http://localhost:3000
+
+### Verify the Container
+```powershell
+docker ps
+curl.exe -i http://localhost:3000
+```
+
+### Stop the Application
+```powershell
+docker stop swynex-app
+```
+
+### Build and Run Summary
+The application runs inside a Docker container using Node.js 20 Alpine.
+Port 3000 is mapped from the container to the host machine.
+The Docker image can be rebuilt from the included Dockerfile.
